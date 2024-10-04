@@ -271,7 +271,7 @@ object Strings {
     const val Glave_1_cancel = "<b>Рассказчик</b>\nКонец первой главы"
     const val Glave_2_start = "Перейти ко второй главе!"
     const val Glave_2_cancel = "<b>Рассказчик</b>\n" + "Конец второй главы"
-    const val Glave_3_start = "Перейти ко третьей главе!"
+    const val Glave_3_start = "Перейти к третьей главе"
     const val Glave_3_cancel = "<b>Рассказчик</b>\n" + "Конец третьей главы"
     const val Glave_4_start = "Перейти к четвертой главе"
     const val Glave_4_cancel = "<b>Рассказчик</b>\n" + "Конец четвертой главы"
