@@ -1,6 +1,11 @@
 
 import Lavel_1.*
 import Lavel_2.*
+import Lavel_3.SevenChapterMessageOneBlock1
+import Lavel_3.SevenChapterMessageOneBlock2
+import Lavel_3.SevenChapterMessageOneBlock3
+import Lavel_3.SevenChapterMessageOneBlock4
+import Lavel_4.*
 
 import com.example.Strings
 
@@ -49,6 +54,14 @@ object BotStateFactory {
             text.contains(Regex(Regex.escape(Strings.introMessage_31_1))) -> SixChapterMessageOneBlock()
             text.contains(Regex(Regex.escape(Strings.introMessage_38_1))) -> SevenChapterMessageOneBlock()
             text.contains(Regex(Regex.escape(Strings.Glave_3_start))) -> SevenChapterMessageOneBlock1()
+            text.contains(Regex(Regex.escape(Strings.introMessage_59_1))) -> SevenChapterMessageOneBlock2()
+            text.contains(Regex(Regex.escape(Strings.introMessage_69_1))) -> SevenChapterMessageOneBlock3()
+            text.contains(Regex(Regex.escape(Strings.introMessage_82_1))) -> SevenChapterMessageOneBlock4()
+            text.contains(Regex(Regex.escape(Strings.Glave_4_start))) -> FourChapterMessageOneBlock1()
+            text.contains(Regex(Regex.escape(Strings.introMessage_109_chapterTwo_1))) -> FourChapterMessageOneBlock2()
+            text.contains(Regex(Regex.escape(Strings.introMessage_119_chapterTwo_1))) -> FourChapterMessageOneBlock3()
+            text.contains(Regex(Regex.escape(Strings.introMessage_128_chapterTwo_1))) -> FourChapterMessageOneBlock4()
+            text.contains(Regex(Regex.escape(Strings.Glave_5_start))) -> FourChapterMessageOneBlock5()
 
             text.contains(Regex("start")) -> FirstChapterMessageOneBlock()
             else -> InitialStateLableOneT()
