@@ -1,4 +1,4 @@
-package Lavel_4
+package Lavel_6
 
 import BotState
 import com.example.Strings
@@ -10,50 +10,32 @@ import com.github.kotlintelegrambot.entities.keyboard.KeyboardButton
 import com.github.kotlintelegrambot.types.TelegramBotResult
 import utils.sendMessageWithTyping
 import utils.sendMessagesWithTypingList
-import utils.sendPhotoWithTyping
 
-class FourChapterMessageOneBlock1 : BotState {
+class SixChapterOneBlock : BotState {
     override suspend fun handleText(chatId: ChatId, text: String, bot: Bot, result: TelegramBotResult<ChatMember>) {
         if (BotStateFactory.isActive(chatId.toString())) {
             return
         }
         BotStateFactory.setActive(chatId.toString(), true)
         BotStateFactory.executingTexts = null
-
         sendMessagesWithTypingList(
             chatId,
             listOf(
-                Strings.introMessage_99_chapterTwo,
-                Strings.introMessage_100_chapterTwo,
-
-                ),
-            bot
-        )
-        sendPhotoWithTyping(
-            chatId,
-            "https://cloud.mail.ru/public/cPJK/NzQgA5QFF",
-            "",
-            bot
-        )
-        sendMessagesWithTypingList(
-            chatId,
-            listOf(
-
-                Strings.introMessage_101_chapterTwo,
-                Strings.introMessage_102_chapterTwo,
-                Strings.introMessage_103_chapterTwo,
-                Strings.introMessage_104_chapterTwo,
-                Strings.introMessage_105_chapterTwo,
-                Strings.introMessage_106_chapterTwo,
-                Strings.introMessage_107_chapterTwo,
-                Strings.introMessage_108_chapterTwo,
+                Strings.introMessage_184_chapterTwo,
+                Strings.introMessage_185_chapterTwo,
+                Strings.introMessage_186_chapterTwo,
+                Strings.introMessage_187_chapterTwo,
+                Strings.introMessage_188_chapterTwo,
+                Strings.introMessage_189_chapterTwo,
+                Strings.introMessage_190_chapterTwo,
+                Strings.introMessage_191_chapterTwo,
             ),
             bot
         )
         val choiceOfAvatar = KeyboardReplyMarkup(
             keyboard = listOf(
                 listOf(
-                    KeyboardButton(Strings.introMessage_109_chapterTwo_1),
+                    KeyboardButton(Strings.introMessage_192_1),
                 ),
             ),
             resizeKeyboard = true,
@@ -61,7 +43,7 @@ class FourChapterMessageOneBlock1 : BotState {
         )
         sendMessageWithTyping(
             chatId,
-            Strings.introMessage_109_chapterTwo,
+            Strings.introMessage_192_chapterTwo,
             bot,
             choiceOfAvatar
         )
@@ -69,41 +51,35 @@ class FourChapterMessageOneBlock1 : BotState {
     }
 }
 
-
-class FourChapterMessageOneBlock2 : BotState {
+class SixChapterTwoBlock : BotState {
     override suspend fun handleText(chatId: ChatId, text: String, bot: Bot, result: TelegramBotResult<ChatMember>) {
         if (BotStateFactory.isActive(chatId.toString())) {
             return
         }
         BotStateFactory.setActive(chatId.toString(), true)
         BotStateFactory.executingTexts = null
-
         sendMessagesWithTypingList(
             chatId,
             listOf(
-                Strings.introMessage_110_chapterTwo,
-                Strings.introMessage_111_chapterTwo,
-                Strings.introMessage_112_chapterTwo,
-                Strings.introMessage_113_chapterTwo,
-                Strings.introMessage_114_chapterTwo,
-                Strings.introMessage_115_chapterTwo,
-                Strings.introMessage_116_chapterTwo,
-                Strings.introMessage_117_chapterTwo,
-                Strings.introMessage_118_chapterTwo,
-
-                ),
-            bot
-        )
-        sendPhotoWithTyping(
-            chatId,
-            "https://cloud.mail.ru/public/NaCz/h6Be5di7F",
-            "",
+                Strings.introMessage_193_chapterTwo,
+                Strings.introMessage_194_chapterTwo,
+                Strings.introMessage_195_chapterTwo,
+                Strings.introMessage_196_chapterTwo,
+                Strings.introMessage_197_chapterTwo,
+                Strings.introMessage_198_chapterTwo,
+                Strings.introMessage_199_chapterTwo,
+                Strings.introMessage_200_chapterTwo,
+                Strings.introMessage_201_chapterTwo,
+                Strings.introMessage_202_chapterTwo,
+                Strings.introMessage_203_chapterTwo,
+                Strings.introMessage_204_chapterTwo,
+            ),
             bot
         )
         val choiceOfAvatar = KeyboardReplyMarkup(
             keyboard = listOf(
                 listOf(
-                    KeyboardButton(Strings.introMessage_119_chapterTwo_1),
+                    KeyboardButton(Strings.introMessage_206_chapterTwo),
                 ),
             ),
             resizeKeyboard = true,
@@ -111,7 +87,7 @@ class FourChapterMessageOneBlock2 : BotState {
         )
         sendMessageWithTyping(
             chatId,
-            Strings.introMessage_119_chapterTwo,
+            Strings.introMessage_205_chapterTwo,
             bot,
             choiceOfAvatar
         )
@@ -119,41 +95,37 @@ class FourChapterMessageOneBlock2 : BotState {
     }
 }
 
-class FourChapterMessageOneBlock3 : BotState {
+class SixChapterThreeBlock : BotState {
     override suspend fun handleText(chatId: ChatId, text: String, bot: Bot, result: TelegramBotResult<ChatMember>) {
         if (BotStateFactory.isActive(chatId.toString())) {
             return
         }
         BotStateFactory.setActive(chatId.toString(), true)
         BotStateFactory.executingTexts = null
-        sendPhotoWithTyping(
-            chatId,
-            "https://cloud.mail.ru/public/hRSV/NjTxajM12",
-            "",
-            bot
-        )
         sendMessagesWithTypingList(
             chatId,
             listOf(
-                Strings.introMessage_120_chapterTwo,
-                Strings.introMessage_121_chapterTwo,
-                Strings.introMessage_122_chapterTwo,
-                Strings.introMessage_123_chapterTwo,
-                Strings.introMessage_124_chapterTwo,
-                Strings.introMessage_125_chapterTwo,
-                Strings.introMessage_126_chapterTwo,
-                Strings.introMessage_127_chapterTwo,
-                Strings.introMessage_128_chapterTwo,
+                Strings.introMessage_207_chapterTwo,
+                Strings.introMessage_208_chapterTwo,
+                Strings.introMessage_209_chapterTwo,
+                Strings.introMessage_210_chapterTwo,
+                Strings.introMessage_211_chapterTwo,
+                Strings.introMessage_212_chapterTwo,
+                Strings.introMessage_213_chapterTwo,
+                Strings.introMessage_214_chapterTwo,
+                Strings.introMessage_215_chapterTwo,
+                Strings.introMessage_216_chapterTwo,
+                Strings.introMessage_217_chapterTwo,
+                Strings.introMessage_218_chapterTwo,
+                Strings.introMessage_219_chapterTwo,
 
-
-                ),
+            ),
             bot
         )
-
         val choiceOfAvatar = KeyboardReplyMarkup(
             keyboard = listOf(
                 listOf(
-                    KeyboardButton(Strings.introMessage_128_chapterTwo_1),
+                    KeyboardButton(Strings.introMessage_221_chapterTwo),
                 ),
             ),
             resizeKeyboard = true,
@@ -161,7 +133,7 @@ class FourChapterMessageOneBlock3 : BotState {
         )
         sendMessageWithTyping(
             chatId,
-            Strings.introMessage_129_chapterTwo,
+            Strings.introMessage_220_chapterTwo,
             bot,
             choiceOfAvatar
         )
@@ -169,7 +141,7 @@ class FourChapterMessageOneBlock3 : BotState {
     }
 }
 
-class FourChapterMessageOneBlock4 : BotState {
+class SixChapterFourBlock : BotState {
     override suspend fun handleText(chatId: ChatId, text: String, bot: Bot, result: TelegramBotResult<ChatMember>) {
         if (BotStateFactory.isActive(chatId.toString())) {
             return
@@ -179,24 +151,18 @@ class FourChapterMessageOneBlock4 : BotState {
         sendMessagesWithTypingList(
             chatId,
             listOf(
-                Strings.introMessage_130_chapterTwo,
-                Strings.introMessage_131_chapterTwo,
-                Strings.introMessage_132_chapterTwo,
-                Strings.introMessage_133_chapterTwo,
-                Strings.introMessage_134_chapterTwo,
-                Strings.introMessage_135_chapterTwo,
-                Strings.introMessage_136_chapterTwo,
-                Strings.introMessage_137_chapterTwo,
-                Strings.introMessage_138_chapterTwo,
-                Strings.introMessage_139_chapterTwo,
+                Strings.introMessage_222_chapterTwo,
+                Strings.introMessage_223_chapterTwo,
+                Strings.introMessage_224_chapterTwo,
+                Strings.introMessage_225_chapterTwo,
+                Strings.introMessage_226_chapterTwo,
                 ),
             bot
         )
-
         val choiceOfAvatar = KeyboardReplyMarkup(
             keyboard = listOf(
                 listOf(
-                    KeyboardButton(Strings.Glave_5_start),
+                    KeyboardButton(Strings.Glave_7),
                 ),
             ),
             resizeKeyboard = true,
@@ -204,10 +170,29 @@ class FourChapterMessageOneBlock4 : BotState {
         )
         sendMessageWithTyping(
             chatId,
-            Strings.Glave_4_cancel,
+            Strings.Glave_6_cancel,
             bot,
             choiceOfAvatar
         )
+        BotStateFactory.setActive(chatId.toString(), false)
+    }
+}
+
+class SixChapterFourBlockGG : BotState {
+    override suspend fun handleText(chatId: ChatId, text: String, bot: Bot, result: TelegramBotResult<ChatMember>) {
+        if (BotStateFactory.isActive(chatId.toString())) {
+            return
+        }
+        BotStateFactory.setActive(chatId.toString(), true)
+        BotStateFactory.executingTexts = null
+        sendMessagesWithTypingList(
+            chatId,
+            listOf(
+                Strings.introMessage_4_gg,
+            ),
+            bot
+        )
+
         BotStateFactory.setActive(chatId.toString(), false)
     }
 }
