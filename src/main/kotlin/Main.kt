@@ -24,7 +24,7 @@ class MyBot {
 
     fun createBot(): Bot {
         return bot {
-            token = "7405223419:AAGiSH_4mydew9cwR5TN1aEILJbLlpN8Ytg"
+            token = ""
             logLevel = LogLevel.Network.Body
 
             dispatch {
